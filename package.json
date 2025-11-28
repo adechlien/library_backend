@@ -1,0 +1,25 @@
+{
+  "name": "libreria-backend-api",
+  "version": "1.0.0",
+  "description": "API de biblioteca para Proyecto 01 (usuarios, libros y reservas)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "nodemon": "^3.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
